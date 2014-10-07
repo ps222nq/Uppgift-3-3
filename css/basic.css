@@ -1,1 +1,69 @@
-/* Denna fil får du editera för att lösa uppgiften. Du får INTE ändra i html-filen. */
+/* basic.css */
+/* stylesheet för att lösa uppgift 3.3 */
+/* target design: https://github.com/ps222nq/Uppgift-3-3/blob/master/IE7_hela.png */
+
+/*Colors:
+
+Body #FCFAF4
+container border: #CECAB9;
+Dark brown header: #51473D;
+Content: #EAE7D2;
+nav tabs: #797066;
+hyperlinks: #51473D;
+
+Color picker:  http://html-color-codes.info/colors-from-image/
+*/
+
+
+/*Page Structure*/
+/*--------------*/
+
+body{
+	background-color: #FCFAF4;
+}
+
+#container {
+	width:620px;
+	margin: 10px 20px 15px 10px;
+	border: 1px solid #CECAB9;
+}
+
+#topbar {
+	background-color: #51473D;
+}
+
+#menu {}
+
+#content {
+	background-color:#EAE7D2;
+
+}
+
+#maincontent {
+	padding:10px;
+	border-right: 1px dashed #797066;
+	width:55%;
+	float:left;
+}
+
+#subcontent {
+	padding:10px;
+	width:35%;
+	float:right;
+
+}
+
+#bottomcontent {
+	clear:both;
+}
+
+/*Fonts and Typography*/
+/*--------------------*/
+
+body{}
+
+h1 {}
+
+/* Images */
+
+
