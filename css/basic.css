@@ -8,7 +8,7 @@ Body #FCFAF4
 container border: #CECAB9;
 Dark brown header: #51473D;
 Content: #EAE7D2;
-nav tabs: #797066;
+nav tabs + p text: #797066;
 hyperlinks: #51473D;
 
 Color picker:  http://html-color-codes.info/colors-from-image/
@@ -36,18 +36,19 @@ body{
 
 #content {
 	background-color:#EAE7D2;
+	padding-top:2em;
 
 }
 
 #maincontent {
-	padding:10px;
-	border-right: 1px dashed #797066;
+	padding:0px 10px;	
 	width:55%;
 	float:left;
 }
 
 #subcontent {
-	padding:10px;
+	padding: 0px 10px;
+	border-left: 1px dashed #797066;
 	width:35%;
 	float:right;
 
@@ -60,10 +61,52 @@ body{
 /*Fonts and Typography*/
 /*--------------------*/
 
-body{}
+body{
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #797066
+}
 
-h1 {}
+h1,h2 {
+	font-family: "Times New Roman", Times, serif;
+}
+
+h1 {font-size: 2em;}
+
+h2{ 
+	font-size: 1.1em;
+	font-weight: lighter;
+	color:#51473D;
+	
+}
+
+a {
+	color:#51473D;
+}
+
+#subcontent p {
+	line-height: 1.8;
+	font-size: smaller;
+}
+
+#subcontent h1 {
+	font-size:1.3em;
+}
+
+#bottomcontent {
+	font-style: italic;
+	font-size:x-small;
+}
 
 /* Images */
+/*--------*/
+
+img {
+	float:left;
+	margin-right:5px;
+}
+
+/* Helper Classes */
+/*----------------*/
 
 
