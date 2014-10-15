@@ -23,16 +23,56 @@ body{
 }
 
 #container {
-	width:620px;
+	width:600px;
 	margin: 10px 20px 15px 10px;
 	border: 1px solid #CECAB9;
 }
 
 #topbar {
 	background-color: #51473D;
+	color:#EAE7D2;
+	padding:0.2em 0px;
 }
 
-#menu {}
+#menu {
+	margin:0px;
+}
+
+#menu>a{
+	background-image: url('pics/coffey.jpg');
+	background-repeat: no-repeat;
+	height:200px;
+	display: block;
+	color:#EAE7D2;
+
+	/*Make link disappear off left side, hide overflow so no scrollbar shows*/
+	text-indent: -1000px;
+	overflow:hidden;
+}
+
+#menu ul {
+	background-color: #51473D;
+	list-style: none;
+	padding:0.3em 1em 0px 1em;
+	margin:0px;
+}
+
+#menu li{
+	display:inline-block;
+	padding: 0.8em 1em;
+	margin:0px;
+	background-color: #797066;
+
+
+	/*debug mode border: 1px solid white;*/
+}
+
+#menu .active {
+	background-color:#EAE7D2;
+
+}
+
+#menu .active a {color:#51473D;}
 
 #content {
 	background-color:#EAE7D2;
@@ -56,6 +96,7 @@ body{
 
 #bottomcontent {
 	clear:both;
+	padding:1em;
 }
 
 /*Fonts and Typography*/
@@ -81,8 +122,21 @@ h2{
 }
 
 a {
-	color:#51473D;
+	color:#EAE7D2;
+	text-decoration: none;
 }
+
+#subcontent li a {
+	color:#51473D;
+	text-decoration: underline;
+	
+}
+
+#menu li:first-letter {
+	text-transform: uppercase;
+}
+
+
 
 #subcontent p {
 	line-height: 1.8;
@@ -96,6 +150,12 @@ a {
 #bottomcontent {
 	font-style: italic;
 	font-size:x-small;
+}
+
+#topbar {
+	text-align:right;
+	font-style: italic;
+	font-size:smaller;
 }
 
 /* Images */
